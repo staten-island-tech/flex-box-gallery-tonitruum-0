@@ -1,15 +1,32 @@
-.card {
-    display: flex;
-    border: red solid 1px;
-    align-items: baseline;
-    justify-content: center;
+html {
+    box-sizing: border-box;
+    background-color: 576F72;
 }
 
-.img {
-    height: 10em;
+.card {
+    display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 32%;
+    height: 32%;
+    border-radius: 10px;
+    margin-bottom: .23%;
+    background-color: 7D9D9C;
+    box-shadow: 5px 5px 10px;
+}
+
+
+
+.img {
+    height: 9em;
+    align-items: center;
+    padding-top: 1em;
 }
 
 .text {
-    display: flex;
+    display: inline-flex;
+    padding: 0 1em;
+    color: F0EBE3;
 }
