@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 html {
     box-sizing: border-box;
     background-color: 576F72;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 500;
 }
 
 
@@ -14,15 +18,14 @@ html {
     border-radius: 10px;
     margin-bottom: .23%;
     background-color: 7D9D9C;
-    box-shadow: 5px 5px 10px;
+    box-shadow: .5em .5em 1em;
 }
 
 
 
 .img {
-    object-fit: fill;
-    height: 95%;
-    max-width: 95%;
+    height: 100%;
+    width: 95%;
     padding-top: 1em;
 }
 
