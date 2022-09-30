@@ -17,10 +17,11 @@ html {
 }
 
 .card {
-    width: 32%;
+    width: 27vw;
     height: 30vw;
     border-radius: 10px;
     margin: .23%;
+    padding: 1vw;
     background-color: 7D9D9C;
     box-shadow: .5em .5em 1em;
     align-items: center;
@@ -30,14 +31,15 @@ html {
 
 
 .img {
-    margin: ;
-    height: 23vw;
+    height: 24vw;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    align-items: center;
 }
 
 .text {
     color: F0EBE3;
     text-align: center;
+    font-size: 2vw;
 }
