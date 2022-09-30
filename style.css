@@ -13,25 +13,24 @@ html {
     align-items: center;
     width: 90vw;
     margin: 30px auto;
-    
+    justify-content: space-around;
 }
 
 .card {
-    width: 27vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 10px;
-    margin: .23%;
     padding: 1vw;
     background-color: 7D9D9C;
     box-shadow: .5em .5em 1em;
     align-items: center;
-    justify-content: space-around;
+    margin: 3vw;
 }
 
 
 
 .img {
-    height: 24vw;
+    height: 15vw;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -41,5 +40,5 @@ html {
 .text {
     color: F0EBE3;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
