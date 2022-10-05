@@ -1,24 +1,21 @@
 :root {
   --curve: 1vw;
   --rich-black-fogra: #07090fff;
---desert-sand: #d9c5b2ff;
---jazzberry-jam: #950952ff;
---keppel: #2ebfa5ff;
---eerie-black: #191919ff;
+  --desert-sand: #d9c5b2ff;
+  --jazzberry-jam: #950952ff;
+  --keppel: #2ebfa5ff;
+  --eerie-black: #191919ff;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 html {
   box-sizing: border-box;
-  background: linear-gradient(-45deg, black, #441DDE, black, #1D5CDE, black);
- background-size: 400% 400%;
+  background: linear-gradient(-45deg, black, #441dde, black, #1d5cde, black);
+  background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  font-family: "Monsterrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   height: 100%;
   width: 100%;
-  
 }
 
 .container {
@@ -36,8 +33,10 @@ html {
   padding: 1vw;
   height: 20vw;
   border-radius: var(--curve);
-  background-color: 7D9D9C;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0px) saturate(180%);
   box-shadow: 0.5em 0.5em 1em;
+
   align-items: center;
   transition: filter 200ms ease, transform 200ms ease;
 }
@@ -51,7 +50,7 @@ html {
 }
 
 .text {
-  color: F0EBE3;
+  color: black;
   text-align: center;
   font-size: 1.5vw;
 }
@@ -64,16 +63,18 @@ html {
 
 .blur {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
 }
 
 @keyframes gradient {
   0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
