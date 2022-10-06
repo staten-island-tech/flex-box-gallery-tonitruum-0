@@ -3,15 +3,15 @@ for (let i = 0; i < 9; i++) {
   array[i] = document.getElementById(`card-${i + 1}`);
 }
 array.forEach((element) => {
-  let x = element;
+  let currentElement = element;
   element.addEventListener("mouseover", (e) => {
     array.forEach((card) => {
-      if (!(card === x)) {
+      if (!(card === currentElement)) {
         card.classList.add("blur");
       }
     });
   });
-  x.addEventListener("mouseout", (e) => {
+  currentElement.addEventListener("mouseout", (e) => {
     array.forEach((cardpt2) => {
       cardpt2.classList.remove("blur");
     });
