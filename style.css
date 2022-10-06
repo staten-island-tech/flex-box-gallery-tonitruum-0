@@ -36,7 +36,7 @@ html {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(0px) saturate(180%);
   box-shadow: 0.5em 0.5em 1em;
-
+  positi on: rela tive;
   align-items: center;
   transition: filter 200ms ease, transform 200ms ease;
 }
@@ -81,4 +81,16 @@ html {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.card:not(:hover) > .hoverText {
+  visibility: hidden;
+}
+
+.card:hover > .hoverText {
+  visibility: visible;
+}
+
+.hoverText {
+  position: absolute;
 }
