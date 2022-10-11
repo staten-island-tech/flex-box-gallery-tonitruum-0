@@ -1,10 +1,5 @@
 :root {
   --curve: 1vw;
-  --rich-black-fogra: #07090fff;
-  --desert-sand: #d9c5b2ff;
-  --jazzberry-jam: #950952ff;
-  --keppel: #2ebfa5ff;
-  --eerie-black: #191919ff;
 }
 
 html {
@@ -36,7 +31,6 @@ html {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(0px) saturate(180%);
   box-shadow: 0.5em 0.5em 1em;
-  positi on: rela tive;
   align-items: center;
   transition: filter 200ms ease, transform 200ms ease;
 }
@@ -79,14 +73,81 @@ html {
   }
 }
 
-#card-1:hover {
-  transform: scale(1.2) rotate(-20deg);
-}
-
-#card-2:hover {
+.card:hover {
   transform: scale(1.2);
 }
 
-#card-3:hover {
-  transform: scale(1.2) rotate(20deg);
+#card-1:hover,
+#card-7:hover {
+  animation: sLeft 0.75s ease 1;
+}
+
+#card-3:hover,
+#card-9:hover {
+  animation: sRight 0.75s ease 1;
+}
+
+#card-2:hover {
+  animation: up 0.75s ease 1;
+}
+
+#card-4:hover {
+  animation: left 0.75s ease 1;
+}
+
+#card-5:hover {
+  animation: wiggle 1.5s ease 1;
+}
+
+#card-6:hover {
+  animation: right 0.75s ease 1;
+}
+
+#card-8:hover {
+  animation: down 0.75s ease 1;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: scale(1.2) rotate(-20deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(20deg);
+  }
+}
+
+@keyframes up {
+  50% {
+    transform: scale(1.2) translate(0, -1rem);
+  }
+}
+
+@keyframes down {
+  50% {
+    transform: scale(1.2) translate(0, 1rem);
+  }
+}
+
+@keyframes right {
+  50% {
+    transform: scale(1.2) translate(1rem, 0);
+  }
+}
+
+@keyframes left {
+  50% {
+    transform: scale(1.2) translate(-1rem, 0);
+  }
+}
+
+@keyframes sRight {
+  50% {
+    transform: scale(1.2) rotate(20deg);
+  }
+}
+
+@keyframes sLeft {
+  50% {
+    transform: scale(1.2) rotate(-20deg);
+  }
 }
