@@ -9,12 +9,16 @@ array.forEach((element) => {
     array.forEach((card) => {
       if (!(card === currentElement)) {
         card.classList.add("blur");
+        if (currentElement === array[4]) {
+          card.classList.add("middleBlur");
+        }
       }
     });
   });
   currentElement.addEventListener("mouseout", (e) => {
     array.forEach((cardpt2) => {
       cardpt2.classList.remove("blur");
+      cardpt2.classList.remove("middleBlur");
     });
   });
 });

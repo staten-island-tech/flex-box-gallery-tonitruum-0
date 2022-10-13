@@ -1,23 +1,25 @@
 :root {
   --curve: 1vw;
+  --color1: #360033;
+  --color2: #0b8793;
 }
 
 html {
   box-sizing: border-box;
-  background: linear-gradient(135deg, #00416A 10%, #E4E5E6 100%);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  backgr ound-size: 400% 400%;
+  animation: gradient 5s ease infinite;
   height: 100%;
   width: 100%;
 }
 
 h1 {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
+  font-family: "Barlow", monospace;
+  font-weight: 400;
   text-align: center;
   color: white;
   font-size: 10vw;
-  text-shadow: .3vh .3vw .5vw black;
+  text-shadow: 0.3vh 0.3vw 0.5vw black;
+  letter-spacing: 2vw;
 }
 
 .container {
@@ -31,7 +33,6 @@ h1 {
 
 .card {
   margin: 3vw;
-  margin-top: 0;
   width: 20vw;
   padding: 1vw;
   height: auto;
@@ -63,29 +64,25 @@ h1 {
   /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
   animation: pulse 1s;
   box-shadow: 0 0 0 2em transparent; */
-  animation: colorswap .75s ease 1;
+  animation: colorswap 0.75s ease 1;
 }
 
 .middleBlur {
   /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
   animation: pulse 1s;
   box-shadow: 0 0 0 2em transparent; */
-  animation: middleBlur 1.5s ease 1;
-}
-
-.center {
-  stroke: a;
+  animation: middleBlur 2s ease 1;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background: conic-gradient(from 0deg, var(--color1) 10%, var(--color2) 100%);
   }
   50% {
-    background-position: 100% 50%;
+    background: conic-gradient(from 180deg, var(--color1) 10%, var(--color2) 100%);
   }
   100% {
-    background-position: 0% 50%;
+    background: conic-gradient(from 360deg, var(--color1) 10%, var(--color2) 100%);
   }
 }
 
@@ -193,16 +190,17 @@ h1 {
   }
   100% {
     background-color: rgba(255, 255, 255, 0.5);
-
   }
 }
 
 @keyframes middleBlur {
+  25% {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
   50% {
     background-color: rgba(17, 25, 40, 0.75);
   }
   100% {
     background-color: rgba(255, 255, 255, 0.5);
-
   }
 }
