@@ -6,8 +6,9 @@
 
 html {
   box-sizing: border-box;
-  backgr ound-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  background: conic-gradient(from 0deg, var(--color1) 10%, var(--color2) 100%);
+ /*  backgr ound-size: 400% 400%; */
+  animation: gradient 5s linear infinite;
   height: 100%;
   width: 100%;
 }
@@ -82,7 +83,7 @@ h1 {
     background: conic-gradient(from 180deg, var(--color1) 10%, var(--color2) 100%);
   }
   100% {
-    background: conic-gradient(from 360deg, var(--color1) 10%, var(--color2) 100%);
+    background: conic-gradient(from 270deg, var(--color1) 10%, var(--color2) 100%);
   }
 }
 
