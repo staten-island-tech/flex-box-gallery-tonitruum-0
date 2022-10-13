@@ -83,7 +83,7 @@ h1 {
     background: conic-gradient(from 180deg, var(--color1) 10%, var(--color2) 100%);
   }
   100% {
-    background: conic-gradient(from 270deg, var(--color1) 10%, var(--color2) 100%);
+    background: conic-gradient(from 360deg, var(--color1) 10%, var(--color2) 100%);
   }
 }
 
