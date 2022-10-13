@@ -77,18 +77,16 @@ html {
   transform: scale(1.2);
 }
 
-#card-1:hover,
-#card-7:hover {
-  animation: sLeft 0.75s ease 1;
-}
-
-#card-3:hover,
-#card-9:hover {
-  animation: sRight 0.75s ease 1;
+#card-1:hover {
+  animation: tLeft 0.75s ease 1;
 }
 
 #card-2:hover {
   animation: up 0.75s ease 1;
+}
+
+#card-3:hover {
+  animation: tRight 0.75s ease 1;
 }
 
 #card-4:hover {
@@ -103,8 +101,16 @@ html {
   animation: right 0.75s ease 1;
 }
 
+#card-7:hover {
+  animation: bLeft 0.75s ease 1;
+}
+
 #card-8:hover {
   animation: down 0.75s ease 1;
+}
+
+#card-9:hover {
+  animation: bRight 0.75s ease 1;
 }
 
 @keyframes wiggle {
@@ -140,14 +146,26 @@ html {
   }
 }
 
-@keyframes sRight {
+@keyframes tLeft {
   50% {
-    transform: scale(1.2) rotate(20deg);
+    transform: scale(1.2) translate(-1rem, -1rem);
   }
 }
 
-@keyframes sLeft {
+@keyframes bLeft {
   50% {
-    transform: scale(1.2) rotate(-20deg);
+    transform: scale(1.2) translate(-1rem, 1rem);
+  }
+}
+
+@keyframes tRight {
+  50% {
+    transform: scale(1.2) translate(1rem, -1rem);
+  }
+}
+
+@keyframes bRight {
+  50% {
+    transform: scale(1.2) translate(1rem, 1rem);
   }
 }
