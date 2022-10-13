@@ -16,8 +16,8 @@ h1 {
   font-weight: 100;
   text-align: center;
   color: white;
-  font-size: 10rem;
-  text-shadow: .3vh .3vw .2vw black;
+  font-size: 10vw;
+  text-shadow: .3vh .3vw .5vw black;
 }
 
 .container {
@@ -60,9 +60,17 @@ h1 {
 /* ANIMATIONS */
 
 .blur {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
   animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
+  box-shadow: 0 0 0 2em transparent; */
+  animation: colorswap .75s ease 1;
+}
+
+.middleBlur {
+  /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent; */
+  animation: middleBlur 1.5s ease 1;
 }
 
 .center {
@@ -83,6 +91,7 @@ h1 {
 
 .card:hover {
   transform: scale(1.2);
+  z-index: 1;
 }
 
 #card-1:hover {
@@ -175,5 +184,25 @@ h1 {
 @keyframes bRight {
   50% {
     transform: scale(1.2) translate(1rem, 1rem);
+  }
+}
+
+@keyframes colorswap {
+  50% {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+
+  }
+}
+
+@keyframes middleBlur {
+  50% {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+
   }
 }
