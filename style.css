@@ -1,3 +1,6 @@
+@import "animations.css";
+@import "keyframes.css";
+
 :root {
   --curve: 1vw;
   --color1: #360033;
@@ -6,11 +9,6 @@
 
 html {
   box-sizing: border-box;
-  background: conic-gradient(from 0deg, var(--color1) 10%, var(--color2) 100%);
- /*  backgr ound-size: 400% 400%; */
-  animation: gradient 5s linear infinite;
-  height: 100%;
-  width: 100%;
 }
 
 h1 {
@@ -30,6 +28,25 @@ h1 {
   width: 90vw;
   margin: 30px auto;
   justify-content: space-around;
+}
+
+.bgHolder {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg {
+  position: relative;
+  height: 100%;
+width: 100%;
+  background-position: center center;
+  background: conic-gradient(from 0deg, var(--color1) 10%, var(--color2) 100%);
+  animation: spin 4s linear infinite;
 }
 
 .card {
@@ -75,133 +92,20 @@ h1 {
   animation: middleBlur 2s ease 1;
 }
 
-@keyframes gradient {
-  0% {
-    background: conic-gradient(from 0deg, var(--color1) 10%, var(--color2) 100%);
+/* @keyf rames gradient {
+  from {
+    background: conic-gradient(
+      from 0deg,
+      var(--color1) 10%,
+      var(--color2) 100%
+    );
   }
-  50% {
-    background: conic-gradient(from 180deg, var(--color1) 10%, var(--color2) 100%);
-  }
-  100% {
-    background: conic-gradient(from 360deg, var(--color1) 10%, var(--color2) 100%);
-  }
-}
-
-.card:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-#card-1:hover {
-  animation: tLeft 0.75s ease 1;
-}
-
-#card-2:hover {
-  animation: up 0.75s ease 1;
-}
-
-#card-3:hover {
-  animation: tRight 0.75s ease 1;
-}
-
-#card-4:hover {
-  animation: left 0.75s ease 1;
-}
-
-#card-5:hover {
-  animation: wiggle 1.5s ease 1;
-}
-
-#card-6:hover {
-  animation: right 0.75s ease 1;
-}
-
-#card-7:hover {
-  animation: bLeft 0.75s ease 1;
-}
-
-#card-8:hover {
-  animation: down 0.75s ease 1;
-}
-
-#card-9:hover {
-  animation: bRight 0.75s ease 1;
-}
-
-@keyframes wiggle {
-  25% {
-    transform: scale(1.2) rotate(-20deg);
-  }
-  75% {
-    transform: scale(1.2) rotate(20deg);
+  to {
+    background: conic-gradient(
+      from 200deg,
+      var(--color1) 10%,
+      var(--color2) 100%
+    );
   }
 }
-
-@keyframes up {
-  50% {
-    transform: scale(1.2) translate(0, -1rem);
-  }
-}
-
-@keyframes down {
-  50% {
-    transform: scale(1.2) translate(0, 1rem);
-  }
-}
-
-@keyframes right {
-  50% {
-    transform: scale(1.2) translate(1rem, 0);
-  }
-}
-
-@keyframes left {
-  50% {
-    transform: scale(1.2) translate(-1rem, 0);
-  }
-}
-
-@keyframes tLeft {
-  50% {
-    transform: scale(1.2) translate(-1rem, -1rem);
-  }
-}
-
-@keyframes bLeft {
-  50% {
-    transform: scale(1.2) translate(-1rem, 1rem);
-  }
-}
-
-@keyframes tRight {
-  50% {
-    transform: scale(1.2) translate(1rem, -1rem);
-  }
-}
-
-@keyframes bRight {
-  50% {
-    transform: scale(1.2) translate(1rem, 1rem);
-  }
-}
-
-@keyframes colorswap {
-  50% {
-    background-color: rgba(17, 25, 40, 0.75);
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-}
-
-@keyframes middleBlur {
-  25% {
-    background-color: rgba(17, 25, 40, 0.75);
-  }
-  50% {
-    background-color: rgba(17, 25, 40, 0.75);
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-}
+ */

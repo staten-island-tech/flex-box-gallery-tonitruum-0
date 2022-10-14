@@ -1,0 +1,86 @@
+@keyframes wiggle {
+    25% {
+      transform: scale(1.2) rotate(-20deg);
+    }
+    75% {
+      transform: scale(1.2) rotate(20deg);
+    }
+  }
+  
+  @keyframes up {
+    50% {
+      transform: scale(1.2) translate(0, -1rem);
+    }
+  }
+  
+  @keyframes down {
+    50% {
+      transform: scale(1.2) translate(0, 1rem);
+    }
+  }
+  
+  @keyframes right {
+    50% {
+      transform: scale(1.2) translate(1rem, 0);
+    }
+  }
+  
+  @keyframes left {
+    50% {
+      transform: scale(1.2) translate(-1rem, 0);
+    }
+  }
+  
+  @keyframes tLeft {
+    50% {
+      transform: scale(1.2) translate(-1rem, -1rem);
+    }
+  }
+  
+  @keyframes bLeft {
+    50% {
+      transform: scale(1.2) translate(-1rem, 1rem);
+    }
+  }
+  
+  @keyframes tRight {
+    50% {
+      transform: scale(1.2) translate(1rem, -1rem);
+    }
+  }
+  
+  @keyframes bRight {
+    50% {
+      transform: scale(1.2) translate(1rem, 1rem);
+    }
+  }
+  
+  @keyframes colorswap {
+    50% {
+      background-color: rgba(17, 25, 40, 0.75);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  @keyframes middleBlur {
+    25% {
+      background-color: rgba(17, 25, 40, 0.75);
+    }
+    50% {
+      background-color: rgba(17, 25, 40, 0.75);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }

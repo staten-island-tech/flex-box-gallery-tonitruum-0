@@ -1,0 +1,40 @@
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+#card-1:hover {
+  animation: tLeft 0.75s ease 1;
+}
+
+#card-2:hover {
+  animation: up 0.75s ease 1;
+}
+
+#card-3:hover {
+  animation: tRight 0.75s ease 1;
+}
+
+#card-4:hover {
+  animation: left 0.75s ease 1;
+}
+
+#card-5:hover {
+  animation: wiggle 1.5s ease 1;
+}
+
+#card-6:hover {
+  animation: right 0.75s ease 1;
+}
+
+#card-7:hover {
+  animation: bLeft 0.75s ease 1;
+}
+
+#card-8:hover {
+  animation: down 0.75s ease 1;
+}
+
+#card-9:hover {
+  animation: bRight 0.75s ease 1;
+}
