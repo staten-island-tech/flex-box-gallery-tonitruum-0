@@ -91,6 +91,6 @@ h1 {
   content: '';
   position: absolute;
   inset: -25%;
-  background-image: conic-gradient(var(--color1), var(--color2));
-  animation: 3s linear infinite rot;
+  background-image: conic-gradient(var(--color1), var(--color2), var(--color1));
+  animation: 5s ease-in-out infinite rot;
 }
