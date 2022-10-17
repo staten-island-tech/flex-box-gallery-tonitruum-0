@@ -43,6 +43,34 @@ h1 {
   transition: filter 200ms ease, transform 200ms ease;
 }
 
+@media (max-width: 810px) {
+  .card {
+    width: 30vw;
+    padding: 1.5vw;
+    border-radius: 1.5vw;
+  }
+  .img {
+    border-radius: 1.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 60vw;
+    padding: 2.5vw;
+    border-radius: 2.5vw;
+  }
+  .img {
+    border-radius: 2.5vw;
+  }
+  h1{
+    font-size: 20vw;
+  }
+  span {
+    display: block;
+  }
+}
+
 .img {
   height: auto;
   width: 100%;
