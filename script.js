@@ -1,7 +1,6 @@
 let array = [];
 for (let i = 0; i < 9; i++) {
   array[i] = document.getElementById(`card-${i + 1}`);
-  console.log(array[i]);
 }
 array.forEach((element) => {
   let currentElement = element;

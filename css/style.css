@@ -3,8 +3,8 @@
 
 :root {
   --curve: 1vw;
-  --color1: #360033;
-  --color2: #0b8793;
+  --color1: #F53844;
+  --color2: #42378F;
 }
 
 html {
@@ -60,37 +60,27 @@ h1 {
 /* ANIMATIONS */
 
 .blur {
-  /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent; */
   animation: colorswap 0.75s ease 1;
 }
 
 .middleBlur {
-  /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent; */
   animation: middleBlur 2s ease 1;
 }
 
 .bg {
-  position: absolute;
   z-index: -1;
   width: 100%;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
-  clip-path: border-box;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
 }
 
 .bg::before {
+  width: calc(100vw + 100vh);
+  height: calc(100vw + 100vh);
   content: '';
   position: absolute;
-  inset: -25%;
   background-image: conic-gradient(var(--color1), var(--color2), var(--color1));
-  animation: 5s ease-in-out infinite rot;
+  animation: 15s linear infinite rot;
+  translate: -50vh -50vw;
 }
