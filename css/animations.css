@@ -38,3 +38,10 @@
 #card-9:hover {
   animation: bRight 0.75s ease 1;
 }
+
+@media (max-width: 810px) {
+  .card:hover {
+    animation: none !important;
+    transform: none !important;
+  }
+}

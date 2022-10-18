@@ -1,81 +1,81 @@
 @keyframes wiggle {
-    25% {
-      transform: scale(1.2) rotate(-20deg);
-    }
-    75% {
-      transform: scale(1.2) rotate(20deg);
-    }
+  25% {
+    transform: scale(1.2) rotate(-20deg);
   }
-  
-  @keyframes up {
-    50% {
-      transform: scale(1.2) translate(0, -1rem);
-    }
+  75% {
+    transform: scale(1.2) rotate(20deg);
   }
-  
-  @keyframes down {
-    50% {
-      transform: scale(1.2) translate(0, 1rem);
-    }
+}
+
+@keyframes up {
+  50% {
+    transform: scale(1.2) translate(0, -1rem);
   }
-  
-  @keyframes right {
-    50% {
-      transform: scale(1.2) translate(1rem, 0);
-    }
+}
+
+@keyframes down {
+  50% {
+    transform: scale(1.2) translate(0, 1rem);
   }
-  
-  @keyframes left {
-    50% {
-      transform: scale(1.2) translate(-1rem, 0);
-    }
+}
+
+@keyframes right {
+  50% {
+    transform: scale(1.2) translate(1rem, 0);
   }
-  
-  @keyframes tLeft {
-    50% {
-      transform: scale(1.2) translate(-1rem, -1rem);
-    }
+}
+
+@keyframes left {
+  50% {
+    transform: scale(1.2) translate(-1rem, 0);
   }
-  
-  @keyframes bLeft {
-    50% {
-      transform: scale(1.2) translate(-1rem, 1rem);
-    }
+}
+
+@keyframes tLeft {
+  50% {
+    transform: scale(1.2) translate(-1rem, -1rem);
   }
-  
-  @keyframes tRight {
-    50% {
-      transform: scale(1.2) translate(1rem, -1rem);
-    }
+}
+
+@keyframes bLeft {
+  50% {
+    transform: scale(1.2) translate(-1rem, 1rem);
   }
-  
-  @keyframes bRight {
-    50% {
-      transform: scale(1.2) translate(1rem, 1rem);
-    }
+}
+
+@keyframes tRight {
+  50% {
+    transform: scale(1.2) translate(1rem, -1rem);
   }
-  
-  @keyframes colorswap {
-    50% {
-      background-color: rgba(17, 25, 40, 0.75);
-    }
-    100% {
-      background-color: rgba(255, 255, 255, 0.5);
-    }
+}
+
+@keyframes bRight {
+  50% {
+    transform: scale(1.2) translate(1rem, 1rem);
   }
-  
-  @keyframes middleBlur {
-    25% {
-      background-color: rgba(17, 25, 40, 0.75);
-    }
-    50% {
-      background-color: rgba(17, 25, 40, 0.75);
-    }
-    100% {
-      background-color: rgba(255, 255, 255, 0.5);
-    }
+}
+
+@keyframes colorswap {
+  50% {
+    background-color: rgba(17, 25, 40, 0.75);
   }
-  
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes middleBlur {
+  25% {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
+  50% {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 @keyframes rot {
   0% {
     transform: rotate(0);
@@ -83,5 +83,12 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 810px) {
+  @keyframes middleBlur, colorswap {
+    100% {
+      background-color: none !important;
   }
 }
